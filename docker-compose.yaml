@@ -16,7 +16,6 @@ services:
 
   web:
     image: nginx:alpine
-    container_name: web
     restart: always
     tty: true
     environment:
