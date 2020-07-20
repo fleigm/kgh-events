@@ -12,11 +12,18 @@
 </head>
 <body class="text-primary font-sans bg-gray-200">
 
-<div class="container py-12">
-    <div>
-        @yield('content')
+<div class="flex flex-col min-h-screen items-stretch justify-between">
+    <div class="container py-12 flex-1">
+        <div>
+            @yield('content')
+        </div>
+    </div>
+    <div class="py-2 text-center text-sm text-secondary">
+        Powered by <a class="text-blue-500" href="https://backpackforlaravel.com">Backpack for Laravel.</a>
     </div>
 </div>
+
+
 
 </body>
 </html>
