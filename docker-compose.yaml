@@ -5,11 +5,10 @@
 version: '3.5'
 services:
   # Neos CMS
-  neos:
+  laravel:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    environment:
     volumes:
       - ./:/var/www
     networks:
