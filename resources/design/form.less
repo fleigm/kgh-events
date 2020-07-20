@@ -1,0 +1,44 @@
+form {
+    legend {
+        @apply font-thin text-2xl mb-4;
+    }
+    .form-section {
+        @apply mb-10;
+    }
+
+    .form-field {
+        @apply mb-4;
+
+        label {
+            @apply block mb-1 text-base font-thin;
+        }
+
+        input, textarea, select {
+            @apply w-full bg-gray-100 border rounded px-3 py-2 block;
+
+            &.error {
+                @apply border-red-500;
+            }
+        }
+
+        input[type=checkbox] {
+            width: auto;
+        }
+
+        .help-inline {
+            @apply text-sm text-secondary;
+        }
+    }
+
+    .actions {
+        @apply mt-4;
+    }
+
+    .btn {
+        @apply inline-block border rounded px-5 py-3;
+    }
+
+    .btn-primary {
+        @apply text-primary ;
+    }
+}

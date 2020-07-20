@@ -1,0 +1,71 @@
+body {
+    @apply leading-normal text-primary text-lg;
+}
+
+.content {
+    h1, h2, h3, h4, h5, h6 {
+        @apply mb-1 font-light;
+    }
+    h1 {
+        @apply mb-2 text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    a {
+        @apply text-primary;
+    }
+
+    p {
+        @apply py-2;
+    }
+
+    strong, b {
+        @apply font-semibold;
+    }
+
+    article {
+        @apply mb-10;
+
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+
+    blockquote {
+        @apply text-2xl font-thin;
+    }
+
+    ul {
+        @apply list-disc list-inside py-2 ml-2;
+    }
+
+    ol {
+        @apply list-decimal list-inside py-2 ml-2;
+    }
+
+    .table {
+        @apply w-full;
+        table {
+            @apply w-full;
+
+            th {
+                @apply py-3 px-4 text-secondary bg-gray-100;
+            }
+            td {
+                @apply py-3 px-4;
+            }
+            tr {
+                @apply border-b;
+            }
+        }
+    }
+}
+
+
