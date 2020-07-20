@@ -21,9 +21,9 @@ services:
     restart: always
     tty: true
     environment:
-      VIRTUAL_HOST: fleigm.de
+      VIRTUAL_HOST: khg-tanzkreis.fleigm.de
       VIRTUAL_PORT: 80
-      LETSENCRYPT_HOST: fleigm.de
+      LETSENCRYPT_HOST: khg-tanzkreis.fleigm.de
       LETSENCRYPT_EMAIL: admin@fleigm.de
     expose:
       - 80
