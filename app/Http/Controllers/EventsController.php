@@ -11,7 +11,7 @@ class EventsController extends Controller
     public function index(Request $request)
     {
         $event = Event::query()
-            ->whereDate('begins_at', '>', Carbon::today()->toDateString())
+            ->whereDate('begins_at', '>=', Carbon::today()->toDateString())
             ->first();
 
         return view('index', ['event' => $event]);
