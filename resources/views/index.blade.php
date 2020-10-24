@@ -5,8 +5,9 @@
         <h2>KHG Tanzkreis - Anmeldeportal</h2>
     </div>
 
-    @if($event)
-        <div class="bg-white border rounded shadow-md px-2 py-4 content">
+
+    @forelse($events as $event)
+        <div class="bg-white border rounded shadow-md px-2 py-4 content mb-8">
             <div class="">
                 <div class="mb-4">
                     <h2 class="mb-0">{{ $event->name }}</h2>
@@ -73,9 +74,9 @@
                 </div>
             </div>
         </div>
-    @else
+    @empty
         <div class="bg-white border rounded shadow-md px-2 py-4 content">
             <h2>Keine Veranstaltung gefunden :(</h2>
         </div>
-    @endif
+    @endforelse
 @endsection

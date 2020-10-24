@@ -10,11 +10,12 @@ class EventsController extends Controller
 {
     public function index(Request $request)
     {
-        $event = Event::query()
+        $events = Event::query()
             ->whereDate('begins_at', '>=', Carbon::today()->toDateString())
-            ->first();
+            ->orderBy('begins_at', 'asc')
+            ->get();
 
-        return view('index', ['event' => $event]);
+        return view('index', ['events' => $events]);
     }
 
     public function create(Request $request)
